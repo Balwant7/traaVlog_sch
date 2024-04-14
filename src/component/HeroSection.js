@@ -27,7 +27,7 @@ const HeroSection = () => {
     <>
       <div
         id="herosection"
-        className="h-auto w-full flex justify-evenly items-center pt-1 lg:pt-5 flex-wrap pl-10 lg:px-32"
+        className="h-auto w-full flex justify-evenly items-center pt-1 lg:pt-5 flex-wrap pl-5 lg:pl-10 lg:px-32"
       >
         <div id="heroleft" className=" gap-6 lg:gap-11 flex flex-col ">
           <h4 className=" w-40 p-3 px-[-1rem] lg:w-56 lg:py-5 font-bold  text-sm bg-white text-[#f85e9f] rounded-full  flex gap-4  justify-center items-center">
