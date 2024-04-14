@@ -1,7 +1,19 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/component/ui/Navbar";
+import HeroSection from "@/component/HeroSection";
+import BrandSection from "@/component/BrandSection";
+import Ourservices from "@/component/Ourservices";
+import Travelpoint from "@/component/Travelpoint";
+import Subscribe from "@/component/Subscribe";
+import Footer from "@/component/ui/Footer";
+import { Nunito_Sans } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const nunitosans = Nunito_Sans({
+  subsets: ["latin"],
+  variable: "--font-nunito-sans",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +23,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+        rel="stylesheet"
+      />
+      <body className={(inter.className, nunitosans.className)}>
+        <div className="color">
+          <Navbar />
+          <HeroSection />
+          <BrandSection />
+          <Ourservices />
+        </div>
+        <div className="coloryellow"></div>
+        <Travelpoint />
+        <Subscribe />
+        <Footer />
+        {children}
+      </body>
     </html>
   );
 }
