@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Magnetic from "./Magnetic";
 
-const navbar = () => {
+const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const navicon = useRef();
   const afternav = useRef();
@@ -114,4 +114,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

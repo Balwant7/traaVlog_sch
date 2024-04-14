@@ -36,7 +36,6 @@ export default function RootLayout({ children }) {
           <BrandSection />
           <Ourservices />
         </div>
-        <div className="coloryellow"></div>
         <Travelpoint />
         <Subscribe />
         <Footer />
